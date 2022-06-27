@@ -11,5 +11,15 @@ jobs:
      with:
        dockerimage: "stellantis-harbor/java8-gradle7-node16/v1.0/"
        
+  job2:
+     uses: SamaRamya/Centralized-workflow1/.github/workflows/maven.yml@main
+     with:
+       dockerimage: "stellantis-harbor/openjdk11-mvn/v3.5.3/"
+       
+  job3:
+     uses: SamaRamya/Centralized-workflow1/.github/workflows/nodejs.yml@main
+     with:
+       dockerimage: "stellantis-harbor/openjdk11-node12/v1.0/"
+       
 
     
